@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="935c44d9-74ec-43f0-b5ca-ebf560dcb0ed">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ГруппыВоинскогоУчета" category="Ref">
+				<xr:TypeId>55c8a368-599f-4f23-8dcd-aef5f65593fb</xr:TypeId>
+				<xr:ValueId>617c1e3d-7a15-407c-9e72-f6cb4c3c5e63</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ГруппыВоинскогоУчета" category="Manager">
+				<xr:TypeId>ee4b71a6-0d1f-4352-85da-5b3fd7bb97b8</xr:TypeId>
+				<xr:ValueId>d160f302-5f09-4756-8331-1ccbed9d4ae7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ГруппыВоинскогоУчета" category="List">
+				<xr:TypeId>9a6c979d-191f-428d-8184-969531fa726a</xr:TypeId>
+				<xr:ValueId>d45ab74b-7b0c-49de-981a-02aab426967c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ГруппыВоинскогоУчета</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группы воинского учета</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="c2ceec68-287b-44a7-a215-93d39210671f">
+				<Properties>
+					<Name>КГБ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КГБ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Военнообязанные, прошедшие военную службу в подразделениях, частях Комитета государственной безопасности Республики Беларусь </Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="708ff5be-c650-4677-9623-4db770609e8a">
+				<Properties>
+					<Name>МВД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МВД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Военнообязанные, прошедшие службу в органах Министерства внутренних дел Республики Беларусь, органов финансовых расследований Комитета государственного контроля Республики Беларусь </Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a5f69f96-3b42-4325-ba90-6d56e5aad165">
+				<Properties>
+					<Name>ОПС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОПС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Военнообязанные, прошедшие военную службу в подразделениях, частях и организациях Государственного пограничного комитета Республики Беларусь </Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0e2fcba9-9201-4493-ac78-d2ae29445f24">
+				<Properties>
+					<Name>МЧС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МЧС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Военнообязанные, прошедшие службу в органах и подразделениях Министерства по чрезвычайным ситуациям Республики Беларусь </Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1996ab06-7093-4266-979a-8035ebc8e7d7">
+				<Properties>
+					<Name>ВС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Военнообязанные, прошедшие военную службу, службу в резерве в Вооруженных Силах Республики Беларусь </Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1b23923e-c84f-4328-a11c-c800c831177e">
+				<Properties>
+					<Name>ВМФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВМФ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Военнообязанные, прошедшие военную службу в морском флоте</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3fe9cf76-f323-47fb-b251-8b7ebe2c9209">
+				<Properties>
+					<Name>АС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>АС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="59a86367-c28a-4e4d-92b6-25c5ed995cef">
+				<Properties>
+					<Name>О</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>О</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Работник имеет воинское (специальное) звание офицера (группа учета — «Офицер запаса»)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="daa86f78-5727-45ed-99a3-b907bf2752a6">
+				<Properties>
+					<Name>ОГБ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОГБ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Работник относится к офицерам запаса ОГБ (группа учета — «Офицер запаса ОГБ»)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2836caf9-318d-4a89-abe4-63b50242273f">
+				<Properties>
+					<Name>ПСС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПСС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Работник имеет воинское (специальное) звание, соответствующее прапорщикам (мичманам), сержантам (старшинам), солдатам (матросам) (группа учета — «ПСС запаса»)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a59f2bfb-5ac8-4608-ad44-ee2e66d60709">
+				<Properties>
+					<Name>П</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>П</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Паботник является призывником (группа учета — «Призывник»)</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

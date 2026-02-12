@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействуетДо</dataPath>
+			<field>ДействуетДо</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действует до</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭЦП</dataPath>
+			<field>ЭЦП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Категория</dataPath>
+			<field>Категория</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеОрганизации</dataPath>
+			<field>ПодразделениеОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФИО</dataPath>
+			<field>ФИО</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИО</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДействуетС</dataPath>
+			<field>ДействуетС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действует с</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ=dd.MM.yyyy</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерДоверенности</dataPath>
+			<field>НомерДоверенности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Описание</dataPath>
+			<field>Описание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДолжностьНаименование</dataPath>
+			<field>ДолжностьНаименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование должности</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВышестоящееПодразделение</dataPath>
+			<field>ВышестоящееПодразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вышестоящее подразделение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФизЛицо</dataPath>
+			<field>ФизЛицо</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Физ лицо</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ФизическиеЛицаауДоверенности.ЭЦП,
+	ФизическиеЛицаауДоверенности.НомерДоверенности,
+	ФизическиеЛицаауДоверенности.ДействуетС,
+	ФизическиеЛицаауДоверенности.ДействуетДо,
+	РаботникиОрганизацийСрезПоследних.Должность,
+	ВЫБОР
+		КОГДА НЕ ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.Должность.ауПолноеНаименованиеДолжности, "") = ""
+			ТОГДА РаботникиОрганизацийСрезПоследних.Должность.ауПолноеНаименованиеДолжности
+		КОГДА НЕ ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.Должность.ауНаименованиеДляПечати, "") = ""
+			ТОГДА РаботникиОрганизацийСрезПоследних.Должность.ауНаименованиеДляПечати
+		ИНАЧЕ РаботникиОрганизацийСрезПоследних.Должность.Наименование
+	КОНЕЦ + ВЫБОР
+		КОГДА РаботникиОрганизацийСрезПоследних.Категория В (ЗНАЧЕНИЕ(Справочник.КатегорииРаботников.РабочиеОсновные), ЗНАЧЕНИЕ(Справочник.КатегорииРаботников.РабочиеВспомогательные))
+			ТОГДА ВЫБОР
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "1"
+						ТОГДА " первого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "2"
+						ТОГДА " второго разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "3"
+						ТОГДА " третьего разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "4"
+						ТОГДА " четвертого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "5"
+						ТОГДА " пятого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "6"
+						ТОГДА " шестого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "7"
+						ТОГДА " седьмого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "8"
+						ТОГДА " восьмого разряда"
+					ИНАЧЕ ""
+				КОНЕЦ + ВЫБОР
+					КОГДА РаботникиОрганизацийСрезПоследних.Должность.Наименование ПОДОБНО "%одитель %"
+						ТОГДА ВЫБОР
+								КОГДА РаботникиОрганизацийСрезПоследних.ауКвалификационныйКлассВодителя = ЗНАЧЕНИЕ(Справочник.ауКвалификационныеКлассыВодителей.ПервыйКласс)
+									ТОГДА " первого класса"
+								КОГДА РаботникиОрганизацийСрезПоследних.ауКвалификационныйКлассВодителя = ЗНАЧЕНИЕ(Справочник.ауКвалификационныеКлассыВодителей.ВторойКласс)
+									ТОГДА " второго класса"
+								КОГДА РаботникиОрганизацийСрезПоследних.ауКвалификационныйКлассВодителя = ЗНАЧЕНИЕ(Справочник.ауКвалификационныеКлассыВодителей.ТретийКласс)
+									ТОГДА " третьего класса"
+								ИНАЧЕ ""
+							КОНЕЦ
+					ИНАЧЕ ""
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА РаботникиОрганизацийСрезПоследних.Должность.ауКвалификационнаяКатегория = ЗНАЧЕНИЕ(Перечисление.КвалификационнаяКатегория.Первая)
+					ТОГДА " первой квалификационной категории"
+				КОГДА РаботникиОрганизацийСрезПоследних.Должность.ауКвалификационнаяКатегория = ЗНАЧЕНИЕ(Перечисление.КвалификационнаяКатегория.Вторая)
+					ТОГДА " второй квалификационной категории"
+				ИНАЧЕ ""
+			КОНЕЦ
+	КОНЕЦ КАК ДолжностьНаименование,
+	РаботникиОрганизацийСрезПоследних.Категория,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации,
+	ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации.Наименование, "") КАК Подразделение,
+	ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации.Родитель.Наименование, "") КАК ВышестоящееПодразделение,
+	ВЫРАЗИТЬ(ФизическиеЛицаауДоверенности.Описание КАК СТРОКА(150)) КАК Описание,
+	ФизическиеЛица.Наименование КАК ФИО,
+	ФизическиеЛица.Ссылка КАК ФизЛицо
+ИЗ
+	Справочник.ФизическиеЛица.ауДоверенности КАК ФизическиеЛицаауДоверенности
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица КАК ФизическиеЛица
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;Дата {(&amp;Дата)}, НЕ Временно) КАК РаботникиОрганизацийСрезПоследних
+			ПО (РаботникиОрганизацийСрезПоследних.Сотрудник.Физлицо = ФизическиеЛица.Ссылка)
+		ПО ФизическиеЛицаауДоверенности.Ссылка = ФизическиеЛица.Ссылка
+ГДЕ
+	НЕ РаботникиОрганизацийСрезПоследних.Регистратор ССЫЛКА Документ.УвольнениеИзОрганизаций
+
+СГРУППИРОВАТЬ ПО
+	ФизическиеЛицаауДоверенности.НомерДоверенности,
+	ФизическиеЛицаауДоверенности.ЭЦП,
+	ФизическиеЛицаауДоверенности.ДействуетС,
+	РаботникиОрганизацийСрезПоследних.Должность,
+	ФизическиеЛицаауДоверенности.ДействуетДо,
+	ВЫБОР
+		КОГДА НЕ ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.Должность.ауПолноеНаименованиеДолжности, "") = ""
+			ТОГДА РаботникиОрганизацийСрезПоследних.Должность.ауПолноеНаименованиеДолжности
+		КОГДА НЕ ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.Должность.ауНаименованиеДляПечати, "") = ""
+			ТОГДА РаботникиОрганизацийСрезПоследних.Должность.ауНаименованиеДляПечати
+		ИНАЧЕ РаботникиОрганизацийСрезПоследних.Должность.Наименование
+	КОНЕЦ + ВЫБОР
+		КОГДА РаботникиОрганизацийСрезПоследних.Категория В (ЗНАЧЕНИЕ(Справочник.КатегорииРаботников.РабочиеОсновные), ЗНАЧЕНИЕ(Справочник.КатегорииРаботников.РабочиеВспомогательные))
+			ТОГДА ВЫБОР
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "1"
+						ТОГДА " первого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "2"
+						ТОГДА " второго разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "3"
+						ТОГДА " третьего разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "4"
+						ТОГДА " четвертого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "5"
+						ТОГДА " пятого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "6"
+						ТОГДА " шестого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "7"
+						ТОГДА " седьмого разряда"
+					КОГДА РаботникиОрганизацийСрезПоследних.РазрядЕТС = "8"
+						ТОГДА " восьмого разряда"
+					ИНАЧЕ ""
+				КОНЕЦ + ВЫБОР
+					КОГДА РаботникиОрганизацийСрезПоследних.Должность.Наименование ПОДОБНО "%одитель %"
+						ТОГДА ВЫБОР
+								КОГДА РаботникиОрганизацийСрезПоследних.ауКвалификационныйКлассВодителя = ЗНАЧЕНИЕ(Справочник.ауКвалификационныеКлассыВодителей.ПервыйКласс)
+									ТОГДА " первого класса"
+								КОГДА РаботникиОрганизацийСрезПоследних.ауКвалификационныйКлассВодителя = ЗНАЧЕНИЕ(Справочник.ауКвалификационныеКлассыВодителей.ВторойКласс)
+									ТОГДА " второго класса"
+								КОГДА РаботникиОрганизацийСрезПоследних.ауКвалификационныйКлассВодителя = ЗНАЧЕНИЕ(Справочник.ауКвалификационныеКлассыВодителей.ТретийКласс)
+									ТОГДА " третьего класса"
+								ИНАЧЕ ""
+							КОНЕЦ
+					ИНАЧЕ ""
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА РаботникиОрганизацийСрезПоследних.Должность.ауКвалификационнаяКатегория = ЗНАЧЕНИЕ(Перечисление.КвалификационнаяКатегория.Первая)
+					ТОГДА " первой квалификационной категории"
+				КОГДА РаботникиОрганизацийСрезПоследних.Должность.ауКвалификационнаяКатегория = ЗНАЧЕНИЕ(Перечисление.КвалификационнаяКатегория.Вторая)
+					ТОГДА " второй квалификационной категории"
+				ИНАЧЕ ""
+			КОНЕЦ
+	КОНЕЦ,
+	ФизическиеЛица.Ссылка,
+	ВЫРАЗИТЬ(ФизическиеЛицаауДоверенности.Описание КАК СТРОКА(150)),
+	РаботникиОрганизацийСрезПоследних.Категория,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации,
+	ФизическиеЛица.Наименование,
+	ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации.Наименование, ""),
+	ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации.Родитель.Наименование, "")</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПодразделениеОбъединенное</dataPath>
+		<expression>Строка(Подразделение)+" "+ Строка(ВышестоящееПодразделение)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подразделение объединенное</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>Дата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФИО</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДолжностьНаименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПодразделениеОбъединенное</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭЦП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерДоверенности</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДействуетС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДействуетДо</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Описание</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ПодразделениеОрганизации</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>0d8dcbfa-3061-4324-bd29-42eee7436bbd</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ДействуетС</dcsset:left>
+					<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcsset:right>
+					<dcsset:userSettingID>3917f24e-f747-4490-8992-c0c373754adb</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ДействуетДо</dcsset:left>
+					<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcsset:right>
+					<dcsset:userSettingID>07d7d8bd-aa18-41ad-af18-695baad49a25</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Дата</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>1f7d2d98-859b-4242-81da-5de4dfc4f225</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ФИО</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДействуетДо</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Times New Roman" height="12" kind="WindowsFont"/>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ДолжностьНаименование</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПодразделениеОбъединенное</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ФИО</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Times New Roman" height="12" kind="WindowsFont"/>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список сотрудников, которым выданы доверенности на учинение электронной цифровой подписи</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачала</dataPath>
+			<field>ДатаНачала</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОкончания</dataPath>
+			<field>ДатаОкончания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеОрганизации</dataPath>
+			<field>ПодразделениеОрганизации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Состояние</dataPath>
+			<field>Состояние</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачалаДлягруппировки</dataPath>
+			<field>ДатаНачалаДлягруппировки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала длягруппировки</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОкончанияДляГруппировки</dataPath>
+			<field>ДатаОкончанияДляГруппировки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания для группировки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ПериодыСостоянийРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+	ПериодыСостоянийРаботниковОрганизаций.ДатаОкончания КАК ДатаОкончания,
+	ПериодыСостоянийРаботниковОрганизаций.ДатаНачала КАК ДатаНачала
+ПОМЕСТИТЬ ЗавершенияОкончание
+ИЗ
+	РегистрСведений.ПериодыСостоянийРаботниковОрганизаций КАК ПериодыСостоянийРаботниковОрганизаций
+ГДЕ
+	ПериодыСостоянийРаботниковОрганизаций.Регистратор ССЫЛКА Документ.ВозвратНаРаботуОрганизаций
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПериодыСостоянийРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+	ПериодыСостоянийРаботниковОрганизаций.ДатаНачала КАК ДатаНачала,
+	МИНИМУМ(ВЫБОР
+			КОГДА ЗавершенияОкончание.ДатаОкончания &gt;= &amp;НачалоПериода
+					И ЗавершенияОкончание.ДатаОкончания &lt;= &amp;КонецПериода
+				ТОГДА ЗавершенияОкончание.ДатаОкончания
+		КОНЕЦ) КАК ДатаОкончания,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации КАК ПодразделениеОрганизации,
+	СостояниеРаботниковОрганизаций.Состояние КАК Состояние,
+	СостояниеРаботниковОрганизаций.Регистратор,
+	РаботникиОрганизацийСрезПоследних.Должность,
+	ПериодыСостоянийРаботниковОрганизаций.ДатаНачала КАК ДатаНачалаДлягруппировки,
+	МИНИМУМ(ВЫБОР
+			КОГДА ЗавершенияОкончание.ДатаОкончания &gt;= &amp;НачалоПериода
+					И ЗавершенияОкончание.ДатаОкончания &lt;= &amp;КонецПериода
+				ТОГДА ЗавершенияОкончание.ДатаОкончания
+		КОНЕЦ) КАК ДатаОкончанияДляГруппировки
+ИЗ
+	РегистрСведений.ПериодыСостоянийРаботниковОрганизаций КАК ПериодыСостоянийРаботниковОрганизаций
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних({&amp;НачалоПериода}, ) КАК РаботникиОрганизацийСрезПоследних
+		ПО ПериодыСостоянийРаботниковОрганизаций.Сотрудник = РаботникиОрганизацийСрезПоследних.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостояниеРаботниковОрганизаций КАК СостояниеРаботниковОрганизаций
+		ПО ПериодыСостоянийРаботниковОрганизаций.Регистратор = СостояниеРаботниковОрганизаций.Регистратор
+			И ПериодыСостоянийРаботниковОрганизаций.Сотрудник = СостояниеРаботниковОрганизаций.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ЗавершенияОкончание КАК ЗавершенияОкончание
+		ПО ПериодыСостоянийРаботниковОрганизаций.Сотрудник = ЗавершенияОкончание.Сотрудник
+			И (ЗавершенияОкончание.ДатаОкончания В
+				(ВЫБРАТЬ
+					МИНИМУМ(т.ДатаОкончания)
+				ИЗ
+					ЗавершенияОкончание КАК т
+				ГДЕ
+					т.Сотрудник = ПериодыСостоянийРаботниковОрганизаций.Сотрудник
+					И ПериодыСостоянийРаботниковОрганизаций.ДатаНачала &lt;= т.ДатаОкончания)),
+	(ВЫБРАТЬ
+		ПериодыСостоянийРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+		ПериодыСостоянийРаботниковОрганизаций.ДатаОкончания КАК ДатаОкончания,
+		ПериодыСостоянийРаботниковОрганизаций.ДатаНачала КАК ДатаНачала
+	ИЗ
+		РегистрСведений.ПериодыСостоянийРаботниковОрганизаций КАК ПериодыСостоянийРаботниковОрганизаций
+	ГДЕ
+		ПериодыСостоянийРаботниковОрганизаций.Регистратор ССЫЛКА Документ.ВозвратНаРаботуОрганизаций
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ПериодыСостоянийРаботниковОрганизаций.Сотрудник,
+		ПериодыСостоянийРаботниковОрганизаций.ДатаОкончания,
+		ПериодыСостоянийРаботниковОрганизаций.ДатаНачала
+	ИЗ
+		РегистрСведений.ПериодыСостоянийРаботниковОрганизаций КАК ПериодыСостоянийРаботниковОрганизаций
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ОтсутствиеНаРаботеОрганизаций.РаботникиОрганизации КАК ОтсутствиеНаРаботеОрганизацийРаботникиОрганизации
+			ПО ПериодыСостоянийРаботниковОрганизаций.Регистратор = ОтсутствиеНаРаботеОрганизацийРаботникиОрганизации.Ссылка
+				И ПериодыСостоянийРаботниковОрганизаций.Сотрудник = ОтсутствиеНаРаботеОрганизацийРаботникиОрганизации.Сотрудник
+	ГДЕ
+		ПериодыСостоянийРаботниковОрганизаций.Регистратор ССЫЛКА Документ.ОтсутствиеНаРаботеОрганизаций
+		И ОтсутствиеНаРаботеОрганизацийРаботникиОрганизации.ПричинаОтсутствия = ЗНАЧЕНИЕ(Перечисление.СостоянияРаботникаОрганизации.Работает)) КАК ДатаОкончанияСостояния
+ГДЕ
+	ПериодыСостоянийРаботниковОрганизаций.Регистратор ССЫЛКА Документ.ОтсутствиеНаРаботеОрганизаций
+	И СостояниеРаботниковОрганизаций.Состояние &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СостоянияРаботникаОрганизации.Работает)
+	И (ПериодыСостоянийРаботниковОрганизаций.ДатаНачала МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			ИЛИ ЗавершенияОкончание.ДатаОкончания МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода)
+
+СГРУППИРОВАТЬ ПО
+	ПериодыСостоянийРаботниковОрганизаций.Сотрудник,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации,
+	СостояниеРаботниковОрганизаций.Состояние,
+	СостояниеРаботниковОрганизаций.Регистратор,
+	РаботникиОрганизацийСрезПоследних.Должность,
+	ПериодыСостоянийРаботниковОрганизаций.ДатаНачала,
+	ПериодыСостоянийРаботниковОрганизаций.ДатаНачала
+
+УПОРЯДОЧИТЬ ПО
+	Состояние,
+	ПодразделениеОрганизации,
+	Сотрудник,
+	ДатаНачала</query>
+	</dataSet>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Состояние</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПодразделениеОрганизации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Должность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаНачала</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОкончания</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ПодразделениеОрганизации</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ПодразделенияОрганизаций.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>dfc3c149-e93f-4bad-bdae-f69ef98ff52c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Состояние</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>e2773f5d-a530-4a79-a473-186c47427671</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Периоды состояний работников</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Состояние</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Состояние</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПодразделениеОрганизации</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПодразделениеОрганизации</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Сотрудник</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Должность</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ДатаНачала</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ДатаОкончания</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

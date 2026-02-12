@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="6209899d-caa0-405c-b17e-21f8381a01a7">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыТрудовыхДоговоров" category="Ref">
+				<xr:TypeId>14f21a2e-9cff-4364-b401-ce843f6f8dc7</xr:TypeId>
+				<xr:ValueId>eef44bf4-d459-4ab7-ac99-edbd675f94c7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыТрудовыхДоговоров" category="Manager">
+				<xr:TypeId>fb272ee5-f8f7-4733-89d7-83c1818f77c9</xr:TypeId>
+				<xr:ValueId>30a65a18-8682-4cc5-a658-09ccf3e8f180</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыТрудовыхДоговоров" category="List">
+				<xr:TypeId>cb61cfab-36c6-4df0-915e-4acb049a30fa</xr:TypeId>
+				<xr:ValueId>a77ee562-ffb6-405e-9b59-a5073fbb09da</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыТрудовыхДоговоров</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды трудовых договоров</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Виды трудовых договоров в зависимости от сроков и условий</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="6bc61e33-4404-40eb-a160-4802897274ef">
+				<Properties>
+					<Name>НеопределенСрок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на неопределенный срок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f46d3f73-1f0c-46b0-978d-1188388a9de1">
+				<Properties>
+					<Name>Срочный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>срочный </v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4551cb3a-d1d4-4fb4-b03a-7814ba948811">
+				<Properties>
+					<Name>ОпределенРаботы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на время выполнения определенной работы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="513d31ad-383c-41ee-9a37-b3f4a591122e">
+				<Properties>
+					<Name>ВыпОбязанВремОтсутстРаботника</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на время выполнения обязанностей отсутствующего</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9623561a-2bf4-4b29-8eb3-d22012bfbd00">
+				<Properties>
+					<Name>СезонРаботы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на время выполнения сезонных работ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9f7f9430-35df-4e92-97bc-543c0a25a57d">
+				<Properties>
+					<Name>Соглашение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>дополнительное соглашение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="90984650-54b8-4351-a9a1-26702d9f1b75">
+				<Properties>
+					<Name>ВыпОбязанВремОтсутстРаботникаСоциальныйОтпуск</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на время нахождения основного работника в отпуске по уходу за ребенком до достижения им возраста 3 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eb6922a1-49e7-4366-85f3-221840d4ddbe">
+				<Properties>
+					<Name>ВыпОбязанВремОтсутстРаботникаОтпускПоБерИРодам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на время нахождения основного работника в отпуске по беременности и родам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="29874022-5080-454c-b684-c6e9a632ea4b">
+				<Properties>
+					<Name>ВыпОбязанВремОтсутстРаботникаОснОтпуск</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на время нахождения основного работника в отпуске</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e090bf73-36eb-49c8-ac35-5778680518d2">
+				<Properties>
+					<Name>ВыпОбязанВремОтсутстРаботникаБЛ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>на период временной нетрудоспособности</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

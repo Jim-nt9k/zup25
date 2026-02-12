@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="79f26cae-c115-4f29-8d43-1e2002df5721">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыПараметровДляРасчетаЗарплаты" category="Ref">
+				<xr:TypeId>d0617886-ef64-4bca-b015-8a930ed56299</xr:TypeId>
+				<xr:ValueId>fc7c8cbe-e05b-442a-84e6-ae43baf8a945</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыПараметровДляРасчетаЗарплаты" category="Manager">
+				<xr:TypeId>0fefc59f-7f31-4033-a433-b83c2ab63195</xr:TypeId>
+				<xr:ValueId>f5bb15c2-019f-436d-b072-af3f0f9edc5e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыПараметровДляРасчетаЗарплаты" category="List">
+				<xr:TypeId>2296b760-ca96-40a7-873a-f26ef0cb6654</xr:TypeId>
+				<xr:ValueId>3e4b4b2b-2424-4193-999e-9e86cdc18ae6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыПараметровДляРасчетаЗарплаты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды параметров для расчета зарплаты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="c9f47df2-4a1e-4a95-9b27-79e4c4e486c9">
+				<Properties>
+					<Name>БазоваяВеличина</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Базовая величина РБ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="41572145-e28c-4932-9ab7-651c445c6168">
+				<Properties>
+					<Name>БПМ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бюджет прожиточного минимума РБ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6e28bce1-5be6-4b5d-813a-a17442ace78c">
+				<Properties>
+					<Name>СредняяЗП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Средняя зарплата рабочих и служащих (для Белгосстраха)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Средняя зарплата рабочих и служащих (для Белгосстраха)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f4a80fc3-48c4-41b4-8a2b-896ac229c6fc">
+				<Properties>
+					<Name>БазоваяСтавка1разряда</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По организации базовый предельный норматив ставки 1 разряда по организации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Базовый предельный норматив ставки 1 разряда по организации (Расчет по Постановлению 1651)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="30a44311-5c74-46c1-bb04-13d13e7f030f">
+				<Properties>
+					<Name>Ставка1разрядаОрганизации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ставка 1 разряда организации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e531483f-5f93-4d9d-a0d1-efb7b9932f3b">
+				<Properties>
+					<Name>СреднемесячноеКалендДней</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Среднемесячное количество календарных дней</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4d4ab42a-62fc-47d4-be4b-1c496c7133e0">
+				<Properties>
+					<Name>СреднемесячнаяНормаЧасов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Среднемесячная норма рабочих часов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="889e2830-dd16-4ec4-8899-bf60acdf25cf">
+				<Properties>
+					<Name>МинимальнаяЗарплатаРБ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Минимальная зарплата РБ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8aae6e33-ee0a-4154-b025-565204649618">
+				<Properties>
+					<Name>КоэффициентДляРасчетаОтпуска</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициент для расчета отпуска</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Среднемесячное количество календарных дней в месяце для расчета отпуска</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3ab9974b-9e7e-4e1a-b6cf-36b05178ead7">
+				<Properties>
+					<Name>СреднемесячнаяНормаДней</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Среднемесячная норма дней</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5166c03c-4944-420a-b8de-78a39f72d57e">
+				<Properties>
+					<Name>СтоимостьТалонаНаПитание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стоимость талона на питание</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0c0b86a6-3be5-495a-b655-16754581cca0">
+				<Properties>
+					<Name>Разъездные</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разъездные</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e4afd9d4-0157-4e65-b997-e2d62da3f5fe">
+				<Properties>
+					<Name>ДетскийДень</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Детский день</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="84116de3-41e4-4c19-a9b4-eb5a595c84b5">
+				<Properties>
+					<Name>СредняяЗПРаботников</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Средняя зарплата работников (для БЛ, ФСЗН, Пенсионного фонда)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Средняя зарплата работников (для БЛ, ФСЗН, Пенсионного фонда)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4bc42403-7d22-472a-bae1-08d9d9dbe56c">
+				<Properties>
+					<Name>СуммаУдержанияНатурПродукта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма удержания натур. продукта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fb0bbf0c-4203-4ed7-a978-65d209a2b2d2">
+				<Properties>
+					<Name>ПределУдержанияНатурПродукта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предел удержания натур. продукта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fbcd07ca-1c4c-456e-b9f0-e2fe3d5a44cd">
+				<Properties>
+					<Name>ДатаНачалаПодоходного</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала расчета подоходного</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3665698d-106f-4ebd-8eaa-98ccd49b5a74">
+				<Properties>
+					<Name>ПенсионныйФондБудущегоМесяца</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пенсионный фонд будущего месяца</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0ab851c8-182e-4ddc-a174-a1eba06c1838">
+				<Properties>
+					<Name>СуммаЗаГодСтажа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма за год стажа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e365b72c-349c-4463-a8bd-bd4870f860cb">
+				<Properties>
+					<Name>ОбязательноеСтрахованиеБез97</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обязательное страхование без 97 счета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1cac5118-6bc6-4022-9fef-b8c2f75e3ba7">
+				<Properties>
+					<Name>ЧасоваяМинимальнаяЗарплата</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Минимальная зарплата часовая РБ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="25a78214-64c3-4b05-9588-fb5fa6cd7351">
+				<Properties>
+					<Name>ТочностьРасчетов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точность расчетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8c2e0d25-4255-400b-9ee7-962cb5df44c4">
+				<Properties>
+					<Name>МатПомощьНаОздоровление</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мат.  помощь на оздоровление</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="172c00e1-ca9c-488e-b58f-aa0304d53120">
+				<Properties>
+					<Name>НочныеЧасыПоКатегориям</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ночные часы по категориям</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="89135d7a-f9c3-467a-9ba4-04b63907dcd0">
+				<Properties>
+					<Name>ПределПоСуммеИндексацииЗП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предел по сумме индексации з/п</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="162b46e1-345d-4c90-b0e6-df8b7b066d09">
+				<Properties>
+					<Name>СуточныйТарифАмортизацииАвтомобиля</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Суточный тариф амортизации автомобиля</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="077e78a8-8def-42bc-a3ad-859bccb0538b">
+				<Properties>
+					<Name>ОкруглениеСреднесписочной</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Округление среднесписочной (1-4 знаков)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7250d88a-d689-461c-9ce9-9808a524c412">
+				<Properties>
+					<Name>КомпенсацияСтоловая</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стоимость компенсации за питание (столовая)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4cc275ee-ea6c-49d4-afb4-a6a0ec8a8f31">
+				<Properties>
+					<Name>КомпенсацияБуфет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стоимость компенсации за питание (буфет)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9a5a4968-f9d1-4f73-8b98-ea2ffdcf18ae">
+				<Properties>
+					<Name>РазмерМатПомощи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер материальной помощи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Размер материальной помощи</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a73b35e6-bca5-4871-9cee-5975f450171f">
+				<Properties>
+					<Name>РазмерЕВО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер ЕВО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0117ea8a-2851-4e2c-af3a-6327a5b8ed5b">
+				<Properties>
+					<Name>ЧасоваяМинимальнаяЗарплатаИнвалиды</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Минимальная зарплата часовая РБ для инвалидов I и II гр.</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

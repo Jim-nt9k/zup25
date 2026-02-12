@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DocumentJournal uuid="f6489508-506b-4867-894b-e768a663e720">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ОтпускаПоУходуЗаРебенком" category="Selection">
+				<xr:TypeId>2fd13ee1-5c68-4932-8f85-81795eb5ca6c</xr:TypeId>
+				<xr:ValueId>0c829d61-fd25-4385-90f7-e75adf21b26e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ОтпускаПоУходуЗаРебенком" category="List">
+				<xr:TypeId>22771582-c218-43ba-9d53-efda85ae39d9</xr:TypeId>
+				<xr:ValueId>22c494bb-5aa0-4e40-8af2-89711cba2aa5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ОтпускаПоУходуЗаРебенком" category="Manager">
+				<xr:TypeId>fb3af238-91d4-43d0-866c-48d8386a1c49</xr:TypeId>
+				<xr:ValueId>0cd6cc1c-42be-48ab-a698-e7b35332e78d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОтпускаПоУходуЗаРебенком</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отпуска по уходу за ребенком</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ОтпускаПоУходуЗаРебенком.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="adf323b6-7a87-4340-be0d-fe2739d0079e">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.Attribute.Организация</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="26f883fe-0baa-4533-a612-acd0980b9d7c">
+				<Properties>
+					<Name>Работник</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работник</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.Attribute.Сотрудник</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.Сотрудник</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="522bdca6-7c31-4649-a638-a25732e76c07">
+				<Properties>
+					<Name>Ответственный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.Attribute.Ответственный</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="50388849-894c-4215-af63-b73cf684747f">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.Комментарий</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.Attribute.Комментарий</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="9c39c47d-c2c4-4a86-adbc-56f034a787c9">
+				<Properties>
+					<Name>ДатаНачала</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.ДатаНачала</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="c13caeaf-ad14-43d1-b855-19a1265f3a1b">
+				<Properties>
+					<Name>ДатаОкончания</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.ДатаОкончания</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="af59e010-2081-41ca-a452-425f87c936ed">
+				<Properties>
+					<Name>КоличествоДетей</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество детей</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.КоличествоДетей</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.Attribute.КоличествоДетей</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="649ef7cc-983f-430c-a131-50776914e126">
+				<Properties>
+					<Name>СреднедневнойЗаработок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Среднедневной заработок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.СреднедневнойЗаработок</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="8af55927-e03f-42b7-ad69-aed00cb516da">
+				<Properties>
+					<Name>ВыплачиватьПособиеДоПолутораЛет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выплачивать пособие до полутора лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.ВыплачиватьПособиеДоПолутораЛет</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.Attribute.ВыплачиватьПособиеДоПолутораЛет</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="35bb7165-9993-4490-a927-fbc18be8d845">
+				<Properties>
+					<Name>ВидОперации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид операции</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.ВидОперации</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.Attribute.ВидОперации</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="55266de6-2bfd-4d64-9013-6b4f0fbe030d">
+				<Properties>
+					<Name>ПодразделениеОрганизации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение организации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенком.Attribute.ПодразделениеОрганизации</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ОтпускПоУходуЗаРебенком.Attribute.ПодразделениеОрганизации</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

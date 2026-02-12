@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="99da29db-f308-4ac4-bf1f-cabf9261dc09">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СостоянияРаботникаОрганизации" category="Ref">
+				<xr:TypeId>30c36864-050f-43af-b17d-bcd6d6bdafc6</xr:TypeId>
+				<xr:ValueId>497c4a99-b961-43b0-8cbe-5777bfddb83f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СостоянияРаботникаОрганизации" category="Manager">
+				<xr:TypeId>b1edb67c-ac50-4e92-bdaf-eb4828de07c1</xr:TypeId>
+				<xr:ValueId>8ff3fc1a-e28f-4841-a096-4887f4ded3ad</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СостоянияРаботникаОрганизации" category="List">
+				<xr:TypeId>99da29db-f308-4ac4-bf1f-cabf9261dc09</xr:TypeId>
+				<xr:ValueId>99da29db-f308-fac4-bf1f-cabf9261dc09</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СостоянияРаботникаОрганизации</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояния работника организации</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(Регл)</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="7ecdfea3-ae5a-4a04-858b-e2ecce624162">
+				<Properties>
+					<Name>Работает</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работает</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="80293b3d-c42d-41a0-8306-d3d4705d2096">
+				<Properties>
+					<Name>НеРаботает</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уволен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fc0932db-0108-40eb-8c3b-61f23954155a">
+				<Properties>
+					<Name>Заболевание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Болеет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e6505d67-69d2-4ed3-ba63-fcf94b4ad066">
+				<Properties>
+					<Name>Командировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В командировке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ab81d3f7-e2b2-4a90-9c10-b2452d414fdf">
+				<Properties>
+					<Name>ОтпускЕжегодный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В трудовом отпуске</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6d159c02-0bdf-46b4-83c6-6649b83a2d16">
+				<Properties>
+					<Name>ОтпускЕжегодныйЧасть</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В трудовом отпуске (часть)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="922b48bd-52f1-4d6b-9c14-df2655445b14">
+				<Properties>
+					<Name>ОтпускУчебный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В учебном оплачиваемом отпуске</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1759e556-d366-4b82-8349-dffde98fb022">
+				<Properties>
+					<Name>ОтпускУчебныйНеоплачиваемый</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В соц. отпуск без сохранения зарплаты (для сдачи экзаменов и зачетов)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5c94054a-0240-4b27-8530-01c18d0965ee">
+				<Properties>
+					<Name>ОтпускБезСохраненияЗарплатыСемейноБытовыеПричины</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В отпуске без сохранения зарплаты (сем. - быт. причины)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5daaa098-2630-474e-9a7c-ad7a68ce4930">
+				<Properties>
+					<Name>ОтпускБезСохраненияЗарплатыУчебныеСборы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В отпуске без сохранения зарплаты (на время прохождения учебного сбора)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="59489a38-61fc-4628-b733-5aefd8708c3e">
+				<Properties>
+					<Name>ОтпускПоБеременностиИРодам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В отпуске по беременности и родам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="262855e1-151c-48da-a4fb-a038663b3c2a">
+				<Properties>
+					<Name>ОтпускПоУходуЗаРебенком</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В отпуске по уходу за ребенком</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d4965dad-d07a-4bca-9c0f-92a69aabcb34">
+				<Properties>
+					<Name>ОтсутствуетПоНевыясненнойПричине</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствует по невыясненной причине</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="38ceb2ae-7804-44b6-91ce-7a1a5d05a767">
+				<Properties>
+					<Name>ВынужденныйПрогул</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время вынужденного прогула</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="500797c0-f251-45bc-a348-158602ed1f9f">
+				<Properties>
+					<Name>ГосударственныеОбязанности</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время исполнения государственных или общественных обязанностей</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="53ea3a95-9b17-42d5-ad6c-f170f0dc2b82">
+				<Properties>
+					<Name>Прогулы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прогулы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="903baa53-5e86-42b9-8f22-f6dc701d59b5">
+				<Properties>
+					<Name>ДополнительныеВыходныеДниОплачиваемые</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные выходные дни (оплачиваемые)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8712a3e9-08b9-44b7-979a-ad2bc7e445d2">
+				<Properties>
+					<Name>Простой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Простаивает</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="de159ca1-3b0e-46a0-aa6e-0e439f2858e5">
+				<Properties>
+					<Name>ТравмаНаПроизводстве</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Болеет из-за травмы на производстве</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="256f91b9-b2b3-46f3-bdb2-288f8ff28079">
+				<Properties>
+					<Name>ПоУходуЗаРебенком</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уход за больным ребенком</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="577a2d24-9b5d-44f9-8303-ab7b74617a82">
+				<Properties>
+					<Name>ПоУходуЗаВзрослым</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уход за больным взрослым членом семьи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9e1d9f07-8da5-4e8e-87a6-7a5a9ea2796b">
+				<Properties>
+					<Name>Карантин</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Находится в карантине</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a45ab75e-ae9f-4884-83f2-6bdff66b3de2">
+				<Properties>
+					<Name>Протезирование</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Находится на протезировании в стационаре</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8225660e-d6c3-445b-90f8-e7c99fa4f359">
+				<Properties>
+					<Name>ПособиеПриДолечивании</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Находится на долечивании в санатории</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="74ffa947-8adf-4ab9-a1d1-48208e596fb5">
+				<Properties>
+					<Name>БольничныйПоБеременностиИРодам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Больничный по беременности и родам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9e89c376-c7fb-4ad7-8551-9cab4fe2a420">
+				<Properties>
+					<Name>ДопСвободныйДеньОтРаботы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительный свободный день от работы(за счет соцстраха)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b5b44dac-9e45-4531-b267-d60a8b9863f6">
+				<Properties>
+					<Name>ДеньДонора</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>День донора</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d4f7a7a4-e80f-445c-9481-260eae08e99b">
+				<Properties>
+					<Name>СправкаПоУходуЗаРебенком</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справка по уходу за ребенком</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ffbf893f-6514-41ff-b012-ab443327748b">
+				<Properties>
+					<Name>СвободныйДеньВНеделю</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свободный день в неделю</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8d7f31e5-c85c-463e-9d7d-6604a04c347e">
+				<Properties>
+					<Name>ПодСледствием</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Под следствием</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ee04edc2-3672-49c3-a3c0-c12fe167a465">
+				<Properties>
+					<Name>ДетиДо16Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дети до16 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8b1c463d-bf2d-4967-8a64-d027a846e40a">
+				<Properties>
+					<Name>Медкомиссия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Медкомиссия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1df883d0-6402-499c-9626-df587d2114e5">
+				<Properties>
+					<Name>ОтбытиеНаказания</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбытие наказания</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b692f375-a99e-4587-bebc-50f200982c28">
+				<Properties>
+					<Name>АлкогольноеНаркотическоеОпьянение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Алкогольное/наркотическое опьянение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="14b19f05-f0fc-4750-a591-75128f87825f">
+				<Properties>
+					<Name>РаботаВПраздничныеИВыходныеДни</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работа в праздничные и выходные дни</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Sway, Задача СВФР-002063</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="019932c5-113d-4215-a881-dda7d7b22346">
+				<Properties>
+					<Name>ДополнительныеВыходныеДниБезОплаты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные выходные дни без оплаты</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Sway, Задача СВФР-002063</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="600231d5-90f9-478b-91da-8e73da205605">
+				<Properties>
+					<Name>ОтпускПоКоллДоговору</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отпуск по колл. договору</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="333a0faf-431a-4424-b957-a699d4c427d1">
+				<Properties>
+					<Name>СвободныйОтРаботыДень</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свободный от работы день</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0d393331-3c67-49e6-908c-8a83e5c1c91f">
+				<Properties>
+					<Name>ОтпускПоИнициативеНанимателя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отпуск по инициативе нанимателя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ae83e363-a84a-4399-9c4c-16319a94dac0">
+				<Properties>
+					<Name>ДополнительныеСверхурочныеДни</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные сверхурочные дни</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a83d797e-9850-4c74-8838-f01d412d2648">
+				<Properties>
+					<Name>ДеньДонораБезОплаты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>День донора без оплаты</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2b2d977e-a655-4ba7-8229-c119ef156d95">
+				<Properties>
+					<Name>ДеньОтдыхаЗаСверхрочные</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>День отдыха за сверхрочные часы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4a588f23-fabe-416f-bfea-1a264537b475">
+				<Properties>
+					<Name>Ремонт</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ремонт</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8be47435-f84e-4731-ae39-8427674420c5">
+				<Properties>
+					<Name>ОплатаПоСреднемуЗаработку</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оплата по среднему заработку</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a06ddda3-33ff-473f-8b23-63a15e5fdb7e">
+				<Properties>
+					<Name>ОтпускПоСостояниюЗдоровья</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соц. отпуск с сохранением з/п (по состоянию здоровья)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7358ee0d-7134-4e88-9314-ddc10cf2c4e1">
+				<Properties>
+					<Name>ОтпускСамоизоляция</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соц. отпуск с сохранением з/п (самоизоляция)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="588b901c-fab2-4b5e-8fab-b1c94480a136">
+				<Properties>
+					<Name>ОтсутствиеПоИнициативеНанимателя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствие по инициативе нанимателя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8be71017-9ffa-49b3-838f-9aa857734e5d">
+				<Properties>
+					<Name>ОплатаПоСреднемуЗаработкуСоревнования</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оплата по среднему заработку (соревнования)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ce129f2d-fe98-4843-8fc8-b46e1bf73f72">
+				<Properties>
+					<Name>ПрохождениеДиспансеризации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прохождение диспансеризации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e6bc846d-e96f-4796-832c-1077b2360226">
+				<Properties>
+					<Name>МедосмотрДляДонора</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Медосмотр (для донора)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="69359818-a4d6-481d-91bb-9cef89c376c4">
+				<Properties>
+					<Name>ПрохождениеМедосмотраИДонорство</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прохождение медосмотра и донорство</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7d4e543-1986-444d-abf4-e9938d06ba5d">
+				<Properties>
+					<Name>ДеньОтдыха</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>День отдыха</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1db17c24-695f-46ed-830c-b41d0627cbaa">
+				<Properties>
+					<Name>Обучение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обучение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3b4f7839-f824-45ea-8ddd-74a6f11721e0">
+				<Properties>
+					<Name>ПрочийНевыход</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочий невыход</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

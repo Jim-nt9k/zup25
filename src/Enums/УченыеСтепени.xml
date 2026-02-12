@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="966dce3b-6a76-4ff0-840f-fc86e97c40a3">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.УченыеСтепени" category="Ref">
+				<xr:TypeId>81e1ad44-9255-4545-a516-6bd3b938fc19</xr:TypeId>
+				<xr:ValueId>175537ad-eadc-4528-bfb4-e3db2857a383</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.УченыеСтепени" category="Manager">
+				<xr:TypeId>fb465778-838d-4f90-8ef1-73240189addb</xr:TypeId>
+				<xr:ValueId>de4bb17d-0572-40ee-b5f3-c0be8e438648</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.УченыеСтепени" category="List">
+				<xr:TypeId>d76ea87f-18da-44ab-a36a-9d34b2fc9d21</xr:TypeId>
+				<xr:ValueId>34f7ac9e-7ca1-499e-8b9e-7c9c3ed7877e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УченыеСтепени</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ученые степени</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Sway  Ученые степени</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="13dd3135-1c70-4dc2-9da0-a078e8068ccd">
+				<Properties>
+					<Name>Магистр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Магистр</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="81c36c2f-5029-48c1-a07e-26875f1949f3">
+				<Properties>
+					<Name>КандидатНаук</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кандидат наук</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="55528c91-dc3b-4bfb-b58a-c1a2c58f3415">
+				<Properties>
+					<Name>ДокторНаук</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доктор наук</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8a5206d5-cdd5-4663-bde4-1e857be89f6e">
+				<Properties>
+					<Name>ДокторФилософии</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доктор философии</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>значение "Доктор философии" - для совместимости с Болонской системой, в которой существуют только две степени:  Магистр и Доктор философии.</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,1243 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="cabe5911-92e2-47c7-bf78-14e9a1b02857">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыРасчетаОплатыТруда" category="Ref">
+				<xr:TypeId>76461663-0f01-45f2-9832-93b5d6779e78</xr:TypeId>
+				<xr:ValueId>edd4f287-09a7-4699-b6bb-399b2a977af0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыРасчетаОплатыТруда" category="Manager">
+				<xr:TypeId>c11f09d0-0350-44e0-816c-6fb02b4a0498</xr:TypeId>
+				<xr:ValueId>445eaeb5-6b0c-4d4c-9808-0e03f6b611fa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыРасчетаОплатыТруда" category="List">
+				<xr:TypeId>5caae661-37dd-4fb8-8a87-c5841f2ecb30</xr:TypeId>
+				<xr:ValueId>d350ec57-84af-45f1-b44d-bd4aa44dd5eb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СпособыРасчетаОплатыТруда</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способы расчета оплаты труда</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>(Общ)</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="5380653f-0252-4544-8aad-d80c8ffa3d60">
+				<Properties>
+					<Name>ДетскийДень</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Детский день</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="818d598c-296d-463e-ad8f-b4955b9b3883">
+				<Properties>
+					<Name>ДоначислениеПоУправленческомуУчету</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доначисление по управленческому учету</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c7fcb3f2-672b-4f83-8248-c62572173fff">
+				<Properties>
+					<Name>ДоплатаДоСреднегоЗаработка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата до среднего заработка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e51cdb52-3451-434e-815c-05a1bc648e20">
+				<Properties>
+					<Name>ДоплатаЗаБригаду</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за бригаду</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4f6d834f-de02-4c3f-bcc5-68cb2c597205">
+				<Properties>
+					<Name>ДоплатаЗаВечерниеЧасы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за вечерние часы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e71349e2-f2c1-44ad-b81c-9022ed815873">
+				<Properties>
+					<Name>ДоплатаЗаВредность</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за вредность</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="206aca1b-cc3c-4257-bc9d-22e71bc3d04a">
+				<Properties>
+					<Name>ДоплатаЗаНочныеЧасы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за ночные часы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7f770a60-a1f7-4f89-80da-6c64bec7ed9f">
+				<Properties>
+					<Name>ИсполнительныйЛистПроцентом</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнительный лист процентом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dce23ff1-b25b-422a-a060-dd131a262d54">
+				<Properties>
+					<Name>ИсполнительныйЛистПроцентомДоПредела</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнительный лист процентом до предела</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f384654b-aac0-4907-9e5d-29d8c9fd76dc">
+				<Properties>
+					<Name>ИсполнительныйЛистПроцентомДоПределаСНДФЛ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнительный лист процентом до предела с подоходным налогом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="70902665-fdd2-4da7-8e1b-21babcd97641">
+				<Properties>
+					<Name>ИсполнительныйЛистПроцентомСНДФЛ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнительный лист процентом с НДФЛ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2a3d4fc0-9f8c-4c77-bebd-b526011c4578">
+				<Properties>
+					<Name>ИсполнительныйЛистФиксСуммойДоПредела</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнительный лист фиксированной суммой до предела</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="222958b4-0e0c-406e-933b-b46813d73c9e">
+				<Properties>
+					<Name>НеИспользуется</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не используется</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3171b61c-fbd2-4574-bcf6-df217ba0ed39">
+				<Properties>
+					<Name>НулеваяСумма</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нулевая сумма</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ) ВР без расчета результата</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b93d2e0f-20cd-46e0-829c-60771e23c328">
+				<Properties>
+					<Name>ОтСтажаПоДневнойТарифнойСтавке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От стажа по дневной тарифной ставке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="52e13c57-9a6d-4921-ad1a-5816b0d1b349">
+				<Properties>
+					<Name>ОтСтажаПоМесячнойТарифнойСтавкеПоДням</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От стажа по месячной тарифной ставке по дням</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c754704b-6a8e-40d1-b200-96f47a040ac6">
+				<Properties>
+					<Name>ОтСтажаПоМесячнойТарифнойСтавкеПоЧасам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От стажа по месячной тарифной ставке по часам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0ced7c28-08ef-4388-bd69-e601f3b6de93">
+				<Properties>
+					<Name>ОтСтажаПоЧасовойТарифнойСтавке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От стажа по часовой тарифной ставке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="226ec518-1b7f-44a1-8ff5-65855824a125">
+				<Properties>
+					<Name>ОтСтажаПроцентом</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От стажа процентом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="468149a9-a1b0-4655-b23c-25053a8a5504">
+				<Properties>
+					<Name>ОтСтажаПроцентомОтТС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От стажа процентом от тарифной ставки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3b541d17-f991-485c-90e9-95501ac9a728">
+				<Properties>
+					<Name>Питание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Питание</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cc1dba85-9527-4ece-afcd-07c1ee7a3936">
+				<Properties>
+					<Name>ПоДневнойТарифнойСтавке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По дневной тарифной ставке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="744f5928-f393-4ffd-9524-39adb6f9859d">
+				<Properties>
+					<Name>ПоДоговоруФиксированнойСуммой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По договору фиксированной суммой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="682bd968-3c39-4b0e-bf35-93a297b1a4b6">
+				<Properties>
+					<Name>ПоМесячнойТарифнойСтавкеПоДням</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По месячной тарифной ставке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="61811996-d82c-4f72-b5bf-bf945c9a4796">
+				<Properties>
+					<Name>ПоМесячнойТарифнойСтавкеПоЧасам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По месячной тарифной ставке по часам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="49a647ca-dcda-40fe-a9aa-f9ed4f1994f5">
+				<Properties>
+					<Name>ПособиеМатериОдиночкеДо1_5лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие матери-одиночке до 1.5 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9364badd-fb94-4c74-b695-87208176d76c">
+				<Properties>
+					<Name>ПособиеМатериОдиночкеДо3Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие матери-одиночке до 3 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="85b17e91-887e-4e90-82a1-182585e8adaf">
+				<Properties>
+					<Name>ПособиеНаРебенкаВИЧ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка ВИЧ-инфицированного</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f305e712-3475-402f-9aa2-23e6b21e9fed">
+				<Properties>
+					<Name>ПособиеНаРебенкаДо18ЛетНадб40</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка до 3 лет ребенок инвалид</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="98322ca9-eaa6-40b7-b176-e46beb9c4ccb">
+				<Properties>
+					<Name>ПособиеНаРебенкаДо3Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка до 3 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ce201522-7883-4e48-8444-63eea0d53d14">
+				<Properties>
+					<Name>ПособиеНаРебенкаИнвалида</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка-инвалида</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="79901769-6695-46b3-a773-148c00601598">
+				<Properties>
+					<Name>ПособиеНаРебенкаСНадбавкой40До3Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие по уходу за ребенком-инвалидом в возрасте до 18 лет (120%БПМ)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3278f903-224b-44e3-9a38-775fc0369f1c">
+				<Properties>
+					<Name>ПособиеНаРебенкаСтарше3Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка старше 3х лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e3db25a2-fb44-4301-a40f-787aab5f1798">
+				<Properties>
+					<Name>ПособиеНеРабМатериНадб40До3Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка не работающей матери надбавкой 40%  до 3 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="610d11fb-a2fb-4810-a6f4-21aed0dd1dda">
+				<Properties>
+					<Name>ПособиеНеРабМатериОдиночкеДо1_5Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка не работающей матери-одиночке  до 1.5 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="aaadee5d-75d7-4128-b42a-264bfb678273">
+				<Properties>
+					<Name>ПособиеНеРабМатериОдиночкеДо3Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка не работающей матери-одиночке  до 3 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3b6da1b7-9385-497b-9a1c-ee11fbfccd39">
+				<Properties>
+					<Name>ПособиеНеРаботающейМатериДо3Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на ребенка не работающей матери до 3 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="73358e29-6e06-45fe-a106-32c580309ab4">
+				<Properties>
+					<Name>ПоСреднемуЗаработку</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По среднему заработку</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cdcbf3c0-a5e5-4893-bc66-53438d580f8b">
+				<Properties>
+					<Name>ПоСреднемуЗаработкуДляОтпускаПоКалендарнымДням</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По среднему заработку для отпуска по календарным дням</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4b23dab3-8506-4865-9c7f-84c5af1d6682">
+				<Properties>
+					<Name>ПоСреднемуЗаработкуДляОтпускаПоШестидневке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По среднему заработку для отпуска при расчете из рабочих дней</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="80eab857-824a-4f20-a2c9-7ffbef28f467">
+				<Properties>
+					<Name>ПоСреднемуЗаработкуФСС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По среднему заработку ФСЗН</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Регл)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c61610d1-233a-4da5-bba5-56ad75c7e1db">
+				<Properties>
+					<Name>ПоЧасовойТарифнойСтавке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По часовой тарифной ставке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="28ba7b55-9f12-45a7-b45e-4ac8eb987dd8">
+				<Properties>
+					<Name>ПоЧасовойТарифнойСтавке4Разряда</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По часовой тарифной ставке 4 разряда</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="429e35bf-1089-43fc-b79f-843200f800e7">
+				<Properties>
+					<Name>ПочтовыйСбор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Почтовый сбор</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="372e16a1-28d0-4556-97dc-62af971cc61e">
+				<Properties>
+					<Name>ПроизвольнаяФормула</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Произвольная формула</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7bd46d4a-bfa9-4e40-b78e-43e43e830c24">
+				<Properties>
+					<Name>Процентом</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процентом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ac1a4d95-9b53-41d4-af8d-efe81b9f043d">
+				<Properties>
+					<Name>ПроцентОтТарифнойСтавки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от тарифной ставки с контрактом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="75e41c19-fe68-4063-8f50-0a0599487195">
+				<Properties>
+					<Name>ПроцентОтТарифнойСтавкиБезКонтракта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от тарифной ставки без контракта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="04025200-02be-4f4e-9253-ac88d2761342">
+				<Properties>
+					<Name>Разъездные</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разъездные</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cc9c3e1d-a6ee-4e45-9958-5043d58201e9">
+				<Properties>
+					<Name>СдельныйЗаработок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сдельный заработок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d754db28-1d4d-4b46-8c53-3005d07bd789">
+				<Properties>
+					<Name>СевернаяНадбавка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Северная надбавка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="671a2c01-3c4a-42d5-a907-49b4fd0d0916">
+				<Properties>
+					<Name>УдержаниеФиксированнойСуммой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удержание фиксированной суммой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1bfa919d-51d7-4098-8df1-b3f3ff9fdccc">
+				<Properties>
+					<Name>ФиксированнойСуммой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фиксированной суммой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="caa5ee0b-3b89-4620-883d-b5bd50568178">
+				<Properties>
+					<Name>ФиксСуммойПропорционльноОтработанномуВремени</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фиксированной  суммой пропорционльно отработанному времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="85f7c67a-d67f-4b49-ab49-ee90a21e82d1">
+				<Properties>
+					<Name>СдельныйПриработок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сдельный приработок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d2811d10-44cf-4cb8-b9e3-3f76d070f563">
+				<Properties>
+					<Name>СделкаПоЧасовойТарифнойСтавке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сдельная тарифная часть</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2d1228c9-f1ca-4712-bf0f-2c274dba5c79">
+				<Properties>
+					<Name>РаспределениеПремииПоКТУ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распределение премии по КТУ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="237ee329-a41a-4f17-bca8-5b9d22c8b18c">
+				<Properties>
+					<Name>ПрямойСдельныйЗаработок</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прямой сдельный заработок</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Прямой сдельный заработок</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2a04aba4-3e17-4777-8f02-4bbcb92d2c72">
+				<Properties>
+					<Name>ПроцентОтТарифнойСтавки1Разряда</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от тарифной ставки 1-го разряда предприятия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f0f2a1fa-23da-4305-8f98-0e0c05ac9e1a">
+				<Properties>
+					<Name>УдержаниеФиксированнойСуммойОтБазы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удержание фиксированной суммой от базы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a23153fb-996a-403f-95c1-a3fbd334fc31">
+				<Properties>
+					<Name>ПроцентомОтТарифаИБазы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процентом от тарифа и базы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4ee37b75-dcc3-43d0-a4d8-cad8669d4e93">
+				<Properties>
+					<Name>ДоплатаЗаЗаместительство</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за заместительство</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3b2c1710-e50b-418f-8182-2076d623b7c4">
+				<Properties>
+					<Name>ДоплатаЗаСовмещениеПоОкладу</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за совмещение по окладу</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6e994ca7-2653-4aba-9ce0-f6ae71177a79">
+				<Properties>
+					<Name>ДоплатаЗаСовмещениеПоТарифу</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за совмещение по тарифу</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="397d52ae-3355-4470-a903-c74633ccee2b">
+				<Properties>
+					<Name>ОтСтажаПоСумме</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От стажа по сумме</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3b355335-f800-44a7-b7ba-ebed95e8827f">
+				<Properties>
+					<Name>ПроцентОтТарифнойСтавки1РазрядаОтрВр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от ТС 1-го разряда отраб.времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e5b679bf-59b7-4ae0-865c-8286d0c61843">
+				<Properties>
+					<Name>ПособиеНаДетейВВозрастеОт3До18</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на детей в возрасте от 3 до18</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4b68dc82-33fd-448e-a36d-813aef19dd7f">
+				<Properties>
+					<Name>ПособиеНаВторогоИПоследующихДо3Лет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие на второго и последующих до 3 лет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="80960892-03c1-47a4-885b-184056896420">
+				<Properties>
+					<Name>ДоплатаЗаНочныеЧасыРасчетОтСреднегодовой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за ночные часы расчет от среднегодовой нормы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b9c852c7-062a-44e7-9e8b-c02fbeebdcfd">
+				<Properties>
+					<Name>ДоплатаДоРазмераМЗПотМесячнойМЗП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата до размера МЗП (расчет от месячной МЗП)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="91c06f68-7776-42b0-9705-c7d3b4d7a8a3">
+				<Properties>
+					<Name>ДоплатаДоРазмераМинимальнойЗарплаты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата до МЗП (расчет от часовой МЗП)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="59d17079-0925-4fbe-b7c7-d64d26047e22">
+				<Properties>
+					<Name>ДоплатаДоМЗПотСреднегодовойГрафика</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата до МЗП от среднегодовой графика</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>// СВЭЙ КДЯ 09.10.19 СВФР-004842</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="708dd100-3f0a-4be4-add8-0c52fb29d7e1">
+				<Properties>
+					<Name>ДоплатаЗаВредностьОтОтработанногоВремени</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за вредность от отработанного времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dbdcee32-2167-4bd6-9dd4-59fed86e779a">
+				<Properties>
+					<Name>ДоплатаЗаНочныеЧасыТариф</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за ночные часы тариф</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e57f83bd-bdf7-41fc-b720-75703d2f392c">
+				<Properties>
+					<Name>ДоплатаЗаНочныеЧасыТарифИнстр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за ночные часы тариф инстр</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>(Общ)</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1350cc9e-6b15-4be2-8ca9-edbca4f71930">
+				<Properties>
+					<Name>ПроцентОтТарифнойСтавкиПоИнструкции</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от тарифной ставки по инструкции</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7e256b73-5bda-4a91-96dc-831edbc990bf">
+				<Properties>
+					<Name>ПроцентОтТарифнойСтавки1РазрядаПоРаботнику</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от тарифной ставки 1-го разряда по работнику</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5a1395f9-ced4-43ee-af26-4ffe7f0f012c">
+				<Properties>
+					<Name>ДоплатаИзБюджета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата из бюджета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="176d0eb0-e56f-48d0-98c0-82f87a122afa">
+				<Properties>
+					<Name>ИндексацияЗП</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индексация з/п</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="39e6e283-904e-463d-8578-f71ec8dbbe10">
+				<Properties>
+					<Name>ВоинскоеЗвание</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Воинское звание</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="749388ff-e4aa-4761-8d52-abf4a750669d">
+				<Properties>
+					<Name>КоэффициентОтБазовогоОкладаОтОтрабВр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициент от базового оклада от отработанного времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0440f4d4-de94-4104-ad2d-ef89580bc37d">
+				<Properties>
+					<Name>КоэффициентОтТарифнойСтавки1РазрядаОтОтрабВр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициент от тарифной ставки 1 разряда от отработанного времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c2a06c96-fd7e-4b6b-8fa4-f37c185ccf47">
+				<Properties>
+					<Name>УдержаниеПоИсполнительномуЛистуБезПНИПФ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удержание по исполнительному листу без ПН и ПФ процентом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8b2f5ab0-e284-4b32-b228-bc47c6aa64c2">
+				<Properties>
+					<Name>УдержаниеПоИсполнительномуЛистуБезПНИПФФиксСуммой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удержание по исполнительному листу без ПН и ПФ фиксированной суммой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5bba072e-ed01-4b8e-8f7e-a81a4a6ce1b8">
+				<Properties>
+					<Name>УдержаниеПоИсполнительномуЛистуБезПНИПФДоПредела</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удержание по исполнительному листу без ПН и ПФ до предела процентом</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f38df977-8f2d-4765-b729-fed835d411a3">
+				<Properties>
+					<Name>УдержаниеПоИсполнительномуЛистуБезПНИПФДоПределаФиксСуммой</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удержание по исполнительному листу без ПН и ПФ до предела фиксированной суммой</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f741200a-fc1f-4364-b3ce-675641f192d0">
+				<Properties>
+					<Name>СуточныйНаряд</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Суточный наряд</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a5ce079c-3393-4671-82b3-aa36056a8d63">
+				<Properties>
+					<Name>МПЕПО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МП/ЕПО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a3421187-6d33-4c2b-b66c-8cca1142cafb">
+				<Properties>
+					<Name>ПособиеСтарше3ЛетИзОтдельныхКатегорийСемейИнвалид</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие старше 3-х лет из отдельных категорий семей (инвалид)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a3d2c0a3-18c7-4dfe-a02a-58800c600b8b">
+				<Properties>
+					<Name>ПособиеСтарше3ЛетИзОтдельныхКатегорийСемей</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пособие старше 3-х лет из отдельных категорий семей</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c3e814c8-be33-40a0-a706-476d4f347662">
+				<Properties>
+					<Name>РазницаВОкладах</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разница в окладах</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b4fbc78b-0eeb-4908-bb48-6dd5ed026cd5">
+				<Properties>
+					<Name>ПогрузочноРазгрузочныеРаботы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Погрузочно-разгрузочные работы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6bfbf8cb-d2ed-4883-a369-4ea89982cd89">
+				<Properties>
+					<Name>ПроцентОтТарифнойСтавкиБезПовышенийИДоплат</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от тарифной ставки без повышений и доплат</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b2cad0df-4fe5-4038-aa6b-1694e18d9991">
+				<Properties>
+					<Name>ДоплатаДоРазмераМинимальнойЗарплатыИнвалидам1и2гр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата до МЗП инвалидам I и II  гр.</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f014e976-fb96-4e88-a416-b1a89ca807c8">
+				<Properties>
+					<Name>ПроцентОтТарифнойСтавкиДляВакантнойДолжности</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от тарифной ставки для вакантной должности</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1bee9690-f0b7-4823-b18b-14135bfc1ca6">
+				<Properties>
+					<Name>ПроцентОтОтработанныхЧасов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от отработанных часов (от часовой тарифной ставки)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2effcd43-1b5f-4319-a051-f04bb99859b0">
+				<Properties>
+					<Name>ПроцентОтОтработанныхЧасовЧасоваяТарифнаяСтавка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от отработанных часов (от часовой тарифной ставки)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9e57e372-9cf7-4dee-ba08-75e59b28e48a">
+				<Properties>
+					<Name>ПроцентОтОтработанныхЧасовСтавкаПервогоРазряда</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от отработанных часов (от ставки первого разряда)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4a7c4bab-c182-4d72-acde-043069ea88d3">
+				<Properties>
+					<Name>ОтФОТРаспределениемСуммы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>От ФОТ распределением суммы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1074fa9a-deb1-412c-b422-8009e1a73447">
+				<Properties>
+					<Name>ДоплатаЗаБригадирство</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доплата за бригадирство</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

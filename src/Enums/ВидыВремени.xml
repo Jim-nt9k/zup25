@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="be253022-0313-44e1-802b-749ce740e386">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыВремени" category="Ref">
+				<xr:TypeId>eb30f96a-b8c7-441b-85dc-10731efbe48f</xr:TypeId>
+				<xr:ValueId>94164da0-a0b2-4762-921f-01a5f7910326</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыВремени" category="Manager">
+				<xr:TypeId>5e0d0d6f-68af-4946-8a5f-d3007c46dead</xr:TypeId>
+				<xr:ValueId>2b283c48-9967-4f2f-a461-0760da5338b2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыВремени" category="List">
+				<xr:TypeId>39d988e8-4604-4d10-8a57-66bfb3a72464</xr:TypeId>
+				<xr:ValueId>c9873a1b-59da-4664-b1a8-a07dc3ceef4b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыВремени</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды времени</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="4702968c-8a1b-4ed5-b947-6cf8fb5426e4">
+				<Properties>
+					<Name>ОтработанноеВПределахНормы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отработанное время в пределах нормы времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Начисление за работу полную рабочую смену в пределах нормы времени</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f2a2e26a-bd3d-4b8d-8985-7649bc6deef1">
+				<Properties>
+					<Name>ОтработанноеСверхНормы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отработанное время сверх нормы времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Начисление за работу сверх нормы времени</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b0982317-337f-4e37-96ff-b7e6306bb4a5">
+				<Properties>
+					<Name>ЦелодневноеНеотработанное</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Целодневное неотработанное время</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Неотработанные полные смены</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="af038b57-c941-4116-a2e3-ab0d51ab4edf">
+				<Properties>
+					<Name>ЧасовоеНеотработанное</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Часовое неотработанное время и командировки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Неотработанные неполные смены</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0d6ea205-5f54-4abd-8ced-94a3099c905f">
+				<Properties>
+					<Name>ДополнительноОплачиваемоеВПределахНормы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно оплачиваемое время в пределах нормы времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Дополнительное начисление в пределах нормы времени</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8d626226-d611-4670-9bfc-1bafca22a0f2">
+				<Properties>
+					<Name>ЧасовоеОтработанноеВПределахНормы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Часовое отработанное в пределах нормы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Начисление за работу неполную смену в пределах нормы времени</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DocumentJournal uuid="ebdd4560-6b69-4b68-bc09-9cbbd5537fd6">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ЭлектронныеПисьмаИСобытия" category="Selection">
+				<xr:TypeId>da8f666d-90c8-4614-a8bd-0202288f5a46</xr:TypeId>
+				<xr:ValueId>a7ef13ac-3c00-4d98-9754-baf17a80915f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ЭлектронныеПисьмаИСобытия" category="List">
+				<xr:TypeId>df0f12e8-5750-40a3-a75b-316be75b5b25</xr:TypeId>
+				<xr:ValueId>a2822256-1b30-42e4-b100-c0b52512a3ea</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ЭлектронныеПисьмаИСобытия" category="Manager">
+				<xr:TypeId>485657c3-b03a-4306-91da-e76809fa1024</xr:TypeId>
+				<xr:ValueId>e65ecb47-c97e-4f46-aaac-dc1b6ecc14de</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЭлектронныеПисьмаИСобытия</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронные письма и события</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Событие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="faedbf1a-60a8-4ec9-9203-c168dcad7c9e">
+				<Properties>
+					<Name>Вид</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.ВидСобытия</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.ВидТекстаПисьма</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="780b757a-d34f-4a5c-952a-a4016fa231a0">
+				<Properties>
+					<Name>ДатаКонтакта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата контакта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>Index</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.ДатаТранспорта</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.НачалоСобытия</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="41833b73-8b83-46ac-bb87-25c0681ae7e2">
+				<Properties>
+					<Name>ЕстьВложения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть вложения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>Index</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.ЕстьВложения</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.ЕстьВложения</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="d79c285c-0331-43f1-8b7d-d5f5ff5c73dc">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.Комментарий</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.Комментарий</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="76eecd7d-ea63-41d4-bd4e-b88479204f9e">
+				<Properties>
+					<Name>КомуПредставление</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кому представление</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.КомуПредставление</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="d51a4acb-0fe4-42f9-b350-1b9db4f12483">
+				<Properties>
+					<Name>НеРассмотрено</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не рассмотрено</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.НеРассмотрено</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="b8a9fcc4-1365-4316-92a5-3d3dd4cfe501">
+				<Properties>
+					<Name>Ответственный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.Ответственный</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="7787699c-af8a-4ada-b17d-711dba8fb1f6">
+				<Properties>
+					<Name>ОтправительИмя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправитель имя</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.ОтправительИмя</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="bd7cafb0-486b-43ac-b828-476749c6d2ec">
+				<Properties>
+					<Name>Предмет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предмет</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.ПредметКонтакта</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.ПредметКонтакта</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="524ffa96-f49e-4805-87d3-a24abfb6de01">
+				<Properties>
+					<Name>РассмотретьПосле</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рассмотреть после</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.РассмотретьПосле</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="36eb6b4d-7d54-4629-a39d-8bf2331a509e">
+				<Properties>
+					<Name>СостояниеПотомкаПисьма</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние потомка письма</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.СостояниеПотомкаПисьма</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.СостояниеСобытия</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="7b30383b-b375-44ae-a9f2-0389200066d3">
+				<Properties>
+					<Name>Текст</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.ТекстПисьма</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.СодержаниеСобытия</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="de1f58de-589e-4d71-b3e1-46a90ddb0ae1">
+				<Properties>
+					<Name>Тема</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тема</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.Тема</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.ОписаниеСобытия</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="91af22e1-7f74-41ef-8d6f-4dfe250db5b2">
+				<Properties>
+					<Name>Тип</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.СтатусПисьма</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.ТипСобытия</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="c6e54abb-78fc-4d21-af46-7551689ab282">
+				<Properties>
+					<Name>УчетнаяЗапись</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учетная запись</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.УчетнаяЗапись</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="4f3f2bce-19a0-4305-8c24-d47663a697b2">
+				<Properties>
+					<Name>ЗаявкаКандидата</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявка кандидата</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Событие.Attribute.ЗаявкаКандидата</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЭлектронноеПисьмо.Attribute.ЗаявкаКандидата</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>

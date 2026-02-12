@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DocumentJournal uuid="1502b5c3-fa49-4173-8ee9-9e0aa65edcc0">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentJournalSelection.ДокументыПоЭкономике" category="Selection">
+				<xr:TypeId>15c46d37-4f68-4e6e-870d-6cc1c7579d60</xr:TypeId>
+				<xr:ValueId>1f9879a4-3770-4614-90f2-b12dbc332642</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalList.ДокументыПоЭкономике" category="List">
+				<xr:TypeId>9eb9b525-a7b0-4db5-a191-d6cd66442632</xr:TypeId>
+				<xr:ValueId>41775304-2a8f-4fb7-b4a2-ed875b9d17c7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentJournalManager.ДокументыПоЭкономике" category="Manager">
+				<xr:TypeId>d2aebb6b-a8d2-49bd-bed8-990564a51062</xr:TypeId>
+				<xr:ValueId>bfcdeb12-e555-4bc7-bf3a-87980d6256fc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ДокументыПоЭкономике</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы по экономике</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DefaultForm>DocumentJournal.ДокументыПоЭкономике.Form.ФормаСписка</DefaultForm>
+			<AuxiliaryForm/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<RegisteredDocuments>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетЭкономииПоВакансиям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетЭкономииПоСовместителямИВоеменнымРаботникам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НеНачисленоЗППоБЛОтпБС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЛишениеСнижениеТекПремии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетНеиспользованныхСредствФондаНадбавок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетИспользованияЭкономииФЗП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствФондаНадбавок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствПремирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствМатПомощи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Пост</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ТарифныеСтавки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Повышения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Доплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Надбавки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаДежурствоНаДому</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДежурствоНаДому</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаНочные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаПраздничные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатаЗаЭкстрНочные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ФондНадбавок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Премия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_МатПомощь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_СводнаяТаблица</xr:Item>
+			</RegisteredDocuments>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Column uuid="a050be72-887c-4741-8cff-e957c835b921">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетЭкономииПоВакансиям.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетЭкономииПоСовместителямИВоеменнымРаботникам.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НеНачисленоЗППоБЛОтпБС.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЛишениеСнижениеТекПремии.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетНеиспользованныхСредствФондаНадбавок.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетИспользованияЭкономииФЗП.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствФондаНадбавок.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствПремирования.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствМатПомощи.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Пост.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ТарифныеСтавки.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Повышения.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Доплаты.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Надбавки.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаДежурствоНаДому.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДежурствоНаДому.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаНочные.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаПраздничные.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатаЗаЭкстрНочные.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ФондНадбавок.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Премия.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_МатПомощь.Attribute.Организация</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_СводнаяТаблица.Attribute.Организация</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Column uuid="94e5aa9f-2c12-4c8c-b10a-774ee3c2fb70">
+				<Properties>
+					<Name>Ответственный</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Indexing>DontIndex</Indexing>
+					<References>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетЭкономииПоВакансиям.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетЭкономииПоСовместителямИВоеменнымРаботникам.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.НеНачисленоЗППоБЛОтпБС.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ЛишениеСнижениеТекПремии.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетНеиспользованныхСредствФондаНадбавок.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетИспользованияЭкономииФЗП.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствФондаНадбавок.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствПремирования.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеИУчетНеиспользованныхСредствМатПомощи.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.Пост.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ТарифныеСтавки.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Повышения.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Доплаты.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Надбавки.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаДежурствоНаДому.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.ДежурствоНаДому.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаНочные.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатыЗаПраздничные.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ДоплатаЗаЭкстрНочные.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_ФондНадбавок.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_Премия.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_МатПомощь.Attribute.Ответственный</xr:Item>
+						<xr:Item xsi:type="xr:MDObjectRef">Document.РОПВДС_СводнаяТаблица.Attribute.Ответственный</xr:Item>
+					</References>
+				</Properties>
+			</Column>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</DocumentJournal>
+</MetaDataObject>
